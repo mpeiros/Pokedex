@@ -215,10 +215,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPR-LQ-dXF">
-                                <rect key="frame" x="0.0" y="452" width="600" height="25"/>
+                                <rect key="frame" x="20" y="452" width="560" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKp-9V-Jic">
-                                        <rect key="frame" x="75" y="2" width="450" height="21"/>
+                                        <rect key="frame" x="55" y="2" width="450" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Iu1-fR-Uyj"/>
                                             <constraint firstAttribute="width" constant="450" id="TCc-j8-e48"/>
@@ -272,22 +272,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nXe-O2-Wdi">
                                 <rect key="frame" x="20" y="75" width="560" height="357"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zb1-Vl-9Ml">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon Information:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-1z-xke">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="25"/>
+                                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="29" id="LHq-Qf-rcN"/>
+                                            <constraint firstAttribute="height" constant="25" id="6vC-ms-pBY"/>
                                         </constraints>
-                                        <segments>
-                                            <segment title="Bio"/>
-                                            <segment title="Moves"/>
-                                        </segments>
-                                        <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    </segmentedControl>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-g9-Ar8">
-                                        <rect key="frame" x="0.0" y="54" width="560" height="121"/>
+                                        <rect key="frame" x="0.0" y="50" width="560" height="125"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="383" translatesAutoresizingMaskIntoConstraints="NO" id="8me-2C-xzf">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="121"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="4e7-T0-gd2"/>
                                                     <constraint firstAttribute="width" constant="125" id="V9n-S0-BR8"/>
@@ -301,7 +300,7 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="WYU-BM-Mkd">
-                                                <rect key="frame" x="125" y="0.0" width="435" height="121"/>
+                                                <rect key="frame" x="125" y="0.0" width="435" height="125"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -426,12 +425,14 @@
                             <constraint firstItem="yPR-LQ-dXF" firstAttribute="leading" secondItem="QGu-tL-Kle" secondAttribute="leading" id="2ur-VO-Mb0"/>
                             <constraint firstItem="7Wm-Rt-eJM" firstAttribute="top" secondItem="epn-qO-aAF" secondAttribute="bottom" constant="8" id="4vv-Jo-iIL"/>
                             <constraint firstItem="nXe-O2-Wdi" firstAttribute="top" secondItem="Ct2-Ta-thB" secondAttribute="bottom" constant="20" id="5Tu-SY-wwX"/>
+                            <constraint firstItem="yPR-LQ-dXF" firstAttribute="leading" secondItem="QGu-tL-Kle" secondAttribute="leadingMargin" id="8aN-b1-MQx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yPR-LQ-dXF" secondAttribute="trailing" id="9dX-Ad-4uh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nXe-O2-Wdi" secondAttribute="trailing" id="GCb-Td-TlH"/>
                             <constraint firstItem="yPR-LQ-dXF" firstAttribute="top" secondItem="nXe-O2-Wdi" secondAttribute="bottom" constant="20" id="M8J-DE-hrL"/>
                             <constraint firstItem="epn-qO-aAF" firstAttribute="leading" secondItem="QGu-tL-Kle" secondAttribute="leadingMargin" id="SfH-aU-i8k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="epn-qO-aAF" secondAttribute="trailing" id="fVP-XA-CDa"/>
                             <constraint firstItem="epn-qO-aAF" firstAttribute="top" secondItem="yPR-LQ-dXF" secondAttribute="bottom" constant="15" id="gjW-cp-jYC"/>
-                            <constraint firstAttribute="trailing" secondItem="yPR-LQ-dXF" secondAttribute="trailing" id="pb8-fe-1sP"/>
+                            <constraint firstAttribute="trailing" secondItem="yPR-LQ-dXF" secondAttribute="trailingMargin" id="pb8-fe-1sP"/>
                             <constraint firstItem="Ct2-Ta-thB" firstAttribute="leading" secondItem="QGu-tL-Kle" secondAttribute="leading" id="psi-Rg-kep"/>
                             <constraint firstItem="yPR-LQ-dXF" firstAttribute="top" secondItem="nXe-O2-Wdi" secondAttribute="bottom" constant="20" id="rFt-1k-3JA"/>
                             <constraint firstItem="nXe-O2-Wdi" firstAttribute="leading" secondItem="QGu-tL-Kle" secondAttribute="leadingMargin" id="tB7-9m-JoY"/>
@@ -440,6 +441,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="2ur-VO-Mb0"/>
+                                <exclude reference="pb8-fe-1sP"/>
                                 <exclude reference="rFt-1k-3JA"/>
                                 <exclude reference="v8I-oo-iVU"/>
                             </mask>
