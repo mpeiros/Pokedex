@@ -187,6 +187,7 @@
 				TargetAttributes = {
 					70FA13421CF63F58005E0CC8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WRD8ABT3AF;
 					};
 				};
 			};
@@ -399,6 +400,7 @@
 			baseConfigurationReference = 19AAE56BC699A33C55249B99 /* Pods-Pokedex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxpeiros.Pokedex;
@@ -411,6 +413,7 @@
 			baseConfigurationReference = F2C5F7161015FD0EC09CBC3E /* Pods-Pokedex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pokedex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxpeiros.Pokedex;
