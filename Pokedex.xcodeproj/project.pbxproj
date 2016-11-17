@@ -159,12 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70FA13551CF63F59005E0CC8 /* Build configuration list for PBXNativeTarget "Pokedex" */;
 			buildPhases = (
-				DCC35C4E5B70B305B6D8295E /* 📦 Check Pods Manifest.lock */,
+				DCC35C4E5B70B305B6D8295E /* [CP] Check Pods Manifest.lock */,
 				70FA133F1CF63F58005E0CC8 /* Sources */,
 				70FA13401CF63F58005E0CC8 /* Frameworks */,
 				70FA13411CF63F58005E0CC8 /* Resources */,
-				8DA91F197120A2729BCC3E2F /* 📦 Embed Pods Frameworks */,
-				876326BA383F708215FBE11C /* 📦 Copy Pods Resources */,
+				8DA91F197120A2729BCC3E2F /* [CP] Embed Pods Frameworks */,
+				876326BA383F708215FBE11C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +188,7 @@
 					70FA13421CF63F58005E0CC8 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = WRD8ABT3AF;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -226,14 +227,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		876326BA383F708215FBE11C /* 📦 Copy Pods Resources */ = {
+		876326BA383F708215FBE11C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,14 +242,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8DA91F197120A2729BCC3E2F /* 📦 Embed Pods Frameworks */ = {
+		8DA91F197120A2729BCC3E2F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,19 +257,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokedex/Pods-Pokedex-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DCC35C4E5B70B305B6D8295E /* 📦 Check Pods Manifest.lock */ = {
+		DCC35C4E5B70B305B6D8295E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -405,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxpeiros.Pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -418,6 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxpeiros.Pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
