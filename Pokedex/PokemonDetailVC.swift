@@ -22,6 +22,7 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var evoLbl: UILabel!
     @IBOutlet weak var currentEvoImg: UIImageView!
     @IBOutlet weak var nextEvoImg: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var pokemon: Pokemon!
     
@@ -33,6 +34,8 @@ class PokemonDetailVC: UIViewController {
         let img = UIImage(named: "\(pokemon.pokedexId)")
         mainImg.image = img
         currentEvoImg.image = img
+        
+        activityIndicator.startAnimating()
         
         pokemon.downloadPokemonDetails { () -> () in
             // this will be called after download is done
@@ -66,6 +69,8 @@ class PokemonDetailVC: UIViewController {
             evoLbl.text = str
         }
         
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.stopAnimating()
     }
     
     @IBAction func backBtnPressed(_ sender: AnyObject) {
