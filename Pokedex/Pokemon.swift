@@ -117,12 +117,13 @@ class Pokemon {
         self._name = name
         self._pokedexId = pokedexId
         
-        _pokemonUrl = "\(URL_BASE)\(URL_POKEMON)\(self._pokedexId)/"
+        _pokemonUrl = URL_BASE + URL_POKEMON + "\(self._pokedexId!)"
     }
     
     func downloadPokemonDetails(_ completed: @escaping DownloadComplete) {
         
         let url = URL(string: _pokemonUrl)!
+            
         Alamofire.request(url).responseJSON { response in
             let result = response.result
             
@@ -204,11 +205,8 @@ class Pokemon {
                                 }
                             }
                         }
-                        
                     }
-                    
                 }
-                
             }
         }
     }
